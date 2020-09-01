@@ -11,9 +11,14 @@ root.geometry("640x360")
 
 app = Frame(root)
 app.grid()
-label = Label(app, text = "This is a label!")
 
+#creating label
+label = Label(app, text = "This is a label!")
 label.grid()
+
+#creating a button
+button1 = Button(app, text = "This is a button")
+button1.grid()
 
 #kick off the event loop
 root.mainloop()
