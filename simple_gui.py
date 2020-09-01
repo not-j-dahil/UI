@@ -14,17 +14,20 @@ root.geometry("640x360")
 
 #creating label
 label = Label(root, text = "This is a label!")
-label.pack()
 
 def button1Funct():
     '''Function for button1'''
     global counter #global needed for 'UnboundLocalError: local variable 'counter' referenced before assignment'
     counter += 1
-    print("rawr", counter)
+    label.config(text=counter)
 
 #creating a button
-button1 = Button(root, text = "This is a button")
+button1 = Button(root, text = "Button")
 button1["command"] = button1Funct
+
+
+#pack = put into the window
+label.pack()
 button1.pack()
 
 #kick off the event loop
