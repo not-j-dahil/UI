@@ -27,8 +27,9 @@ button1["command"] = button1Funct
 
 
 #pack = put into the window
-label.pack()
-button1.pack()
+button1.pack(side=LEFT)
+label.pack(side=LEFT)
+
 
 #kick off the event loop
 root.mainloop()
